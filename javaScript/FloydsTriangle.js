@@ -9,5 +9,3 @@ function FloydsTriangle(rows) {
         console.log(row);
     }
 }
-
-printFloydsTriangle(5);

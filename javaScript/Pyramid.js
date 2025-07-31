@@ -6,4 +6,3 @@ function printPyramid(rows) {
         console.log(spaces + stars);
     }
 }
-printPyramid(5); 
