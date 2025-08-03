@@ -1,7 +1,7 @@
 
 public class Pyramid {
    
-    public static void printPyramid(int rows) {
+    public static void Pyramid(int rows) {
         for (int i = 1; i <= rows; i++) {
             
             for (int j = 1; j <= rows - i; j++) {
