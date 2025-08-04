@@ -1,31 +1,20 @@
-function numberDiamond(rows) {
-    
+
+function printNumberDiamond(rows) {
     for (let i = 1; i <= rows; i++) {
-        let line = '';
-        for (let s = 1; s <= rows - i; s++) {
-            line += ' ';
+        let spaces = ' '.repeat(rows - i);
+        let numbers = '';
+        for (let j = 1; j <= 2 * i - 1; j++) {
+            numbers += i;
         }
-        for (let j = 1; j <= i; j++) {
-            line += j;
-        }
-        for (let j = i - 1; j >= 1; j--) {
-            line += j;
-        }
-        console.log(line);
+        console.log(spaces + numbers);
     }
-   
     for (let i = rows - 1; i >= 1; i--) {
-        let line = '';
-        for (let s = 1; s <= rows - i; s++) {
-            line += ' ';
+        let spaces = ' '.repeat(rows - i);
+        let numbers = '';
+        for (let j = 1; j <= 2 * i - 1; j++) {
+            numbers += i;
         }
-        for (let j = 1; j <= i; j++) {
-            line += j;
-        }
-        for (let j = i - 1; j >= 1; j--) {
-            line += j;
-        }
-        console.log(line);
+        console.log(spaces + numbers);
     }
 }
-
+NumberDiamond(5);
